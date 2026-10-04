@@ -1,7 +1,7 @@
 # Learning Interaction Dynamics for Generalizable 3D Human-Object Motion Generation
 
-<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/relimat/blob/main/resources/wax.png" alt="Title Overview">
-<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/assets/qualitative.png" alt="InterAct Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/relimat/blob/resources/resources/wax.png" alt="Title Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/resources/qualitative.png" alt="InterAct Overview">
 
 ## About the Project
 
@@ -11,7 +11,7 @@ We propose an interaction-invariant generative framework for 3D human-object int
 
 The overview of the proposed methodology.
 
-<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/assets/overview.png" alt="InterAct Pipeline Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/resources/overview.png" alt="InterAct Pipeline Overview">
 
 ## Installation
 
