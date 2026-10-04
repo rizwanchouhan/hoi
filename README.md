@@ -1,16 +1,17 @@
-# InterAct: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation
+# Learning Interaction Dynamics for Generalizable 3D Human-Object Motion Generation
 
-<img style="max-width: 100%;" src="https://github.com/wzyabcas/InterAct/blob/main/assets/teaser.png" alt="InterAct Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/relimat/blob/main/resources/wax.png" alt="Title Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/assets/qualitative.png" alt="InterAct Overview">
 
 ## About the Project
 
-The proposed approach, InterAct, presents a comprehensive large-scale 3D human-object interaction (HOI) dataset, originally comprising 21.81 hours of HOI data consolidated from diverse sources, meticulously refined by correcting contact artifacts and augmented with varied motion patterns to extend the total duration to approximately 30 hours. It includes 34.1K sequence-level detailed text descriptions, and provides baseline constructions and evaluation pipelines for versatile generative tasks, including Text-to-HOI (Text2Interaction), Object-to-Human, and Human-to-Object, as well as simulation-ready data conversion for physics-based humanoid control.
+We propose an interaction-invariant generative framework for 3D human-object interaction that separates interaction semantics from motion variations. The framework combines an interaction-invariant field, counterfactual interaction learning, and hierarchical motion generation to produce diverse, realistic, and contact-consistent interactions.
 
 ## 🔥 Architecture
 
 The overview of the proposed methodology.
 
-<img style="max-width: 100%;" src="https://github.com/wzyabcas/InterAct/blob/main/assets/teaser.png" alt="InterAct Pipeline Overview">
+<img style="max-width: 100%;" src="https://github.com/rizwanchouhan/hoi/blob/main/assets/overview.png" alt="InterAct Pipeline Overview">
 
 ## Installation
 
