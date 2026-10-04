@@ -1,0 +1,9 @@
+python -m eval.eval_marker_representation \
+--model_path save/pretrained/model.pt \
+--motion_length 10 \
+--multi_backbone_split 4 \
+--layers 8 \
+--latent_dim 512 \
+--dataset hoi \
+--batch_size 64 \
+--debug 0
