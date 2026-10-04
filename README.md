@@ -16,10 +16,10 @@ The overview of the proposed methodology.
 ## Installation
 
 1. **Clone the Repository**: Download the project from GitHub.
-2. **Set Up Conda Environment**: Create a Conda environment named interact with Python 3.8:
+2. **Set Up Conda Environment**: Create a Conda environment named hoi with Python 3.8:
     ```bash
-    conda create -n interact python=3.8
-    conda activate interact
+    conda create -n hoi python=3.8
+    conda activate hoi
     pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu118
     ```
 3. **Install PyTorch3D**: Follow the official instructions: [PyTorch3D](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).
@@ -33,15 +33,10 @@ The overview of the proposed methodology.
 
 ## Datasets
 
-The project consolidates the following diverse HOI datasets:
+The project consolidates the following HOI datasets:
 
-- **GRAB Dataset**: A dataset of whole-body human grasping of objects captured with markerless motion capture. [GRAB License](https://grab.is.tuebingen.mpg.de/license.html)
 - **BEHAVE Dataset**: A dataset and method for tracking human-object interactions in RGB videos. [BEHAVE License](https://virtualhumans.mpi-inf.mpg.de/behave/license.html)
-- **InterCap Dataset**: Joint markerless 3D tracking of humans and objects in interaction from multi-view RGB-D images. [InterCap License](https://intercap.is.tue.mpg.de/license.html)
 - **OMOMO Dataset**: Object motion guided human motion synthesis with text annotations. [OMOMO Dataset](https://github.com/lijiaman/omomo_release)
-- **NeuralDome / IMHD / CHAIRS Datasets**: Redistributed corrected and augmented HOI data, available upon authorization via the [access form](https://docs.google.com/forms/d/e/1FAIpQLScMCfdd8BXzDBZ3iw0x5zA3KSTlD1F2GTaO8ylDG9Cj1upaPw/viewform?usp=sharing).
-- **ARCTIC Dataset**: A dataset for dexterous bimanual hand-object manipulation. [ARCTIC License](https://github.com/zc-alexfan/arctic/blob/master/LICENSE)
-- **ParaHome Dataset**: Parameterizing everyday home activities towards 3D generative modeling of human-object interactions. [ParaHome License](https://github.com/snuvclab/ParaHome?tab=readme-ov-file#license)
 
 ## Steps for Training
 
@@ -51,7 +46,7 @@ The project consolidates the following diverse HOI datasets:
     ```bash
     # Text2Interaction
     cd text2interaction
-    python -m train.hoi_diff --save_dir ./save/t2m_interact --dataset interact
+    python -m train.hoi_diff --save_dir ./save/t2m_hoi --dataset hoi
 
     # Object2Human
     cd object2human
@@ -71,16 +66,3 @@ Follow these steps to run the demo of the project:
 3. **Inference with Contact Guidance**: Run `bash ./scripts/run_sample_guide_contact.sh` for generating interactions with contact guidance.
 4. **Inference without Contact Guidance**: Run `bash ./scripts/run_sample_nonguide.sh` for generating interactions without guidance.
 5. **Visualization**: Run `python visualization/visualize.py [dataset_name]` to visualize the dataset sequences.
-
-## Citation
-
-If you find this repository useful for your work, please cite:
-
-```bibtex
-@inproceedings{xu2025interact,
-    title     = {{InterAct}: Advancing Large-Scale Versatile 3D Human-Object Interaction Generation},
-    author    = {Xu, Sirui and Li, Dongting and Zhang, Yucheng and Xu, Xiyan and Long, Qi and Wang, Ziyin and Lu, Yunzhi and Dong, Shuchang and Jiang, Hezi and Gupta, Akshat and Wang, Yu-Xiong and Gui, Liang-Yan},
-    booktitle = {CVPR},
-    year      = {2025},
-}
-```
